@@ -2,7 +2,7 @@
 
 add and remove clients from a wireguard server.
 
-`bash add-client.sh <client_name>` will create a config in clients for that client.
+`bash add-peer.sh <client_name>` will create a config in clients for that peer.
 
 `bash remove-peer.sh <client_pub_key>` will remove the peer.
 
@@ -37,7 +37,7 @@ NOTE: this assumes some decent commandline knowlege.
 
 1. start wireguard: `sudo wg-quick up wg0` 
 
-1. add a client `bash add-client.sh <new-client>`
+1. add a client `bash add-peer.sh <new-client-name>`
 
 1. setup iptables rules, see: https://www.ckn.io/blog/2017/11/14/wireguard-vpn-typical-setup/ step 6 for more details.
 
